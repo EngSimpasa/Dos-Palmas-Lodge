@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Submit a booking request for Dos Palmas Lodge and share your preferred room, dates, and contact details.">
+  <title>Booking | Dos Palmas Lodge</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page">
+    <header class="site-header"><nav class="navbar container" aria-label="Primary navigation"><a class="brand" href="index.html" aria-label="Dos Palmas Lodge home"><span class="brand-mark" aria-hidden="true"><img src="assets/images/dos-palmas-logo-official.jpg" alt=""></span><span class="brand-text"><span>Dos Palmas Lodge</span><span>Relaxed stays</span></span></a><button class="nav-toggle" type="button" data-nav-toggle aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button><div class="nav-menu" data-nav-menu><a class="nav-link" data-page href="index.html">Home</a><a class="nav-link" data-page href="rooms.html">Rooms</a><a class="nav-link" data-page href="about.html">About</a><a class="nav-link" data-page href="gallery.html">Gallery</a><a class="nav-link" data-page href="contact.html">Contact</a><a class="button button-primary nav-cta" data-page href="booking.html">Book Now</a></div></nav></header>
+    <main id="main">
+      <section class="page-hero">
+        <img class="page-hero-media" src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1800&q=80" alt="Suite prepared for guests">
+        <div class="page-hero-content"><p class="hero-kicker">Booking request</p><h1>Reserve your stay.</h1><p>Share your details and preferred dates. We will help confirm availability and prepare for your arrival.</p></div>
+      </section>
+      <section class="section">
+        <div class="container form-layout">
+          <div class="content-panel reveal">
+            <p class="section-eyebrow">Booking details</p>
+            <h2 class="section-title">Tell us when you would like to arrive.</h2>
+            <p class="section-copy">Send your preferred dates, room choice, and contact details. Our team can follow up with availability, rates, and any special arrangements you need.</p>
+          </div>
+          <div class="content-panel reveal">
+            <form class="booking-form" data-validate-form action="#" method="post" novalidate>
+              <div class="form-grid">
+                <div class="form-field"><label for="full_name">Full name</label><input id="full_name" name="full_name" type="text" autocomplete="name" data-validate required><span class="field-error" aria-live="polite"></span></div>
+                <div class="form-field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel" data-validate required><span class="field-error" aria-live="polite"></span></div>
+                <div class="form-field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" data-validate required><span class="field-error" aria-live="polite"></span></div>
+                <div class="form-field"><label for="room_type">Room type</label><select id="room_type" name="room_type" data-validate required><option value="">Select a room</option><option value="garden-suite">Garden Suite</option><option value="deluxe-room">Deluxe Room</option><option value="family-cottage">Family Cottage</option></select><span class="field-error" aria-live="polite"></span></div>
+                <div class="form-field"><label for="check_in">Check-in date</label><input id="check_in" name="check_in" type="date" data-validate required><span class="field-error" aria-live="polite"></span></div>
+                <div class="form-field"><label for="check_out">Check-out date</label><input id="check_out" name="check_out" type="date" data-validate required><span class="field-error" aria-live="polite"></span></div>
+                <div class="form-field full"><label for="special_requests">Special requests</label><textarea id="special_requests" name="special_requests" placeholder="Airport pickup, dietary needs, arrival time, or celebration details"></textarea><span class="field-error" aria-live="polite"></span></div>
+              </div>
+              <button class="button button-primary" type="submit">Submit Booking Request</button>
+              <p class="form-message" data-form-message role="status"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="container"><div class="footer-grid"><div><h2 class="footer-brand">Dos Palmas Lodge</h2><p>A warm lodge experience designed for calm stays, easy bookings, and attentive hospitality.</p></div><div><h3>Explore</h3><ul><li><a href="rooms.html">Rooms</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="about.html">About the lodge</a></li></ul></div><div><h3>Booking</h3><ul><li><a href="booking.html">Reserve a room</a></li><li><a href="contact.html">Contact us</a></li><li><a href="tel:+260000000000">+260 000 000 000</a></li></ul></div><div><h3>Connect</h3><ul><li><a href="mailto:info@dospalmaslodge.com">info@dospalmaslodge.com</a></li><li><a href="https://www.facebook.com/" target="_blank" rel="noreferrer">Facebook</a></li></ul></div></div><div class="footer-bottom"><span>&copy; <span data-current-year></span> Dos Palmas Lodge. All rights reserved.</span><span>Relaxed stays, warm service, easy planning.</span></div></div></footer>
+  </div>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/booking.js"></script>
+</body>
+</html>

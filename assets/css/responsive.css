@@ -1,0 +1,161 @@
+@media (min-width: 640px) {
+  .hero-booking-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cards-grid,
+  .gallery-grid,
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 860px) {
+  .section {
+    padding: 6.5rem 0;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-menu {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .nav-link {
+    padding: 0.55rem 0.75rem;
+  }
+
+  .nav-cta {
+    margin: 0 0 0 0.35rem;
+  }
+
+  .hero-booking-strip {
+    grid-template-columns: 1fr 1fr 1.15fr auto;
+    align-items: end;
+    padding: 1.15rem;
+  }
+
+  .split-layout,
+  .story-grid,
+  .form-layout {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section-header {
+    grid-template-columns: 0.9fr 1fr;
+    align-items: end;
+  }
+
+  .section-header.center {
+    grid-template-columns: 1fr;
+  }
+
+  .cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .gallery-item.wide {
+    grid-column: span 2;
+  }
+
+  .gallery-item.tall {
+    grid-row: span 2;
+  }
+
+  .gallery-item.tall img {
+    height: 100%;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1100px) {
+  .hero-content {
+    padding-bottom: 6rem;
+  }
+
+  .image-stack {
+    grid-template-columns: 1.1fr 0.75fr;
+    align-items: end;
+  }
+
+  .image-stack img:last-child {
+    margin-bottom: -2rem;
+  }
+}
+
+@media (max-width: 859px) {
+  .nav-menu {
+    left: 0.8rem;
+    right: 0.8rem;
+  }
+
+  .nav-link,
+  .nav-cta {
+    width: 100%;
+  }
+
+  .page-hero {
+    min-height: 390px;
+  }
+
+  .content-panel {
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .container,
+  .hero-content,
+  .page-hero-content,
+  .cta-content,
+  .hero-booking-strip {
+    width: min(100% - 1.2rem, var(--container));
+  }
+
+  .hero-actions,
+  .cta-actions {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .hero {
+    min-height: 620px;
+  }
+
+  .hero h1,
+  .page-hero h1 {
+    font-size: clamp(2.7rem, 18vw, 4rem);
+  }
+
+  .section-title {
+    font-size: clamp(1.85rem, 11vw, 2.5rem);
+  }
+
+  .stat-row {
+    grid-template-columns: 1fr;
+  }
+}

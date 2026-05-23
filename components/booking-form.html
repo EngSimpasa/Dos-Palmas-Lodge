@@ -1,0 +1,46 @@
+<form class="booking-form" data-validate-form action="#" method="post" novalidate>
+  <div class="form-grid">
+    <div class="form-field">
+      <label for="full_name">Full name</label>
+      <input id="full_name" name="full_name" type="text" autocomplete="name" data-validate required>
+      <span class="field-error" aria-live="polite"></span>
+    </div>
+    <div class="form-field">
+      <label for="phone">Phone number</label>
+      <input id="phone" name="phone" type="tel" autocomplete="tel" data-validate required>
+      <span class="field-error" aria-live="polite"></span>
+    </div>
+    <div class="form-field">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" autocomplete="email" data-validate required>
+      <span class="field-error" aria-live="polite"></span>
+    </div>
+    <div class="form-field">
+      <label for="room_type">Room type</label>
+      <select id="room_type" name="room_type" data-validate required>
+        <option value="">Select a room</option>
+        <option value="garden-suite">Garden Suite</option>
+        <option value="deluxe-room">Deluxe Room</option>
+        <option value="family-cottage">Family Cottage</option>
+      </select>
+      <span class="field-error" aria-live="polite"></span>
+    </div>
+    <div class="form-field">
+      <label for="check_in">Check-in date</label>
+      <input id="check_in" name="check_in" type="date" data-validate required>
+      <span class="field-error" aria-live="polite"></span>
+    </div>
+    <div class="form-field">
+      <label for="check_out">Check-out date</label>
+      <input id="check_out" name="check_out" type="date" data-validate required>
+      <span class="field-error" aria-live="polite"></span>
+    </div>
+    <div class="form-field full">
+      <label for="special_requests">Special requests</label>
+      <textarea id="special_requests" name="special_requests" placeholder="Airport pickup, dietary needs, arrival time, or celebration details"></textarea>
+      <span class="field-error" aria-live="polite"></span>
+    </div>
+  </div>
+  <button class="button button-primary" type="submit">Submit Booking Request</button>
+  <p class="form-message" data-form-message role="status"></p>
+</form>
